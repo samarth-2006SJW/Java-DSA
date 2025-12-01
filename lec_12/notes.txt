@@ -1,0 +1,5 @@
+packages ka concept ye hai ki simply ek directory main bahut zyada code ho gaya to modularity maintain karne ke liye simply multiple directory main code likh ke unko uss package ya directory main import karo jis directory main aapka main function ho 
+
+2 types of packages 
+1.user defined packages
+2.build in packages 
