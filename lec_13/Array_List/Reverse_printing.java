@@ -3,7 +3,6 @@ import java.util.*;
 public class Reverse_printing {
     public static void main(String[] args){
         ArrayList<Integer> list=new ArrayList<>();
-        list.add(5);
         list.add(6);
         list.add(7);
         list.add(8);
@@ -11,12 +10,12 @@ public class Reverse_printing {
         list.add(10);
         list.add(11);
         int n=list.size();
-        int count=0;
+        //int count=0;
         ListIterator<Integer> usi=list.listIterator();
         // while(usi.hasNext()){
         //     count++;
-        //     int x=usi.next();
-        //     System.out.print(x+" ");
+        //     int x=usi.ne list.add(5);
+                //     System.out.print(x+" ");
         //     if(count==n/2){
         //         System.out.print(list.get(n/2)+" ");
         //         for(int i=n/2;i>=0;i--){
