@@ -1,0 +1,49 @@
+Collections Framework:-
+Availaible in util package (import java.util.*;)
+
+Creation of dynamic array syntax:-
+ArrayList<Integer> var_name=new ArrayList<Integer>();(Integer ek class name hai bhai aur koi bhi type ka ho skta haai)
+isme koi bhi CRUD (create read update delete)operations perform kar skte hai 
+
+for adding :- var_name.add( data);(by default ek ke baad ek add hota hai)
+particular index pe insertion ke liye var_name.add(index,data);
+
+for merging two list:- var_name.add(another list ka naam )
+particular index pe element paane ke liye :- var_name.get(index);
+
+java.util.* and java.util.ArrayList main antar ye to ha ki * se package ka pura content istemal kar skta hoon yaani jo kjab chahiye woh tab import/load ho jayega sab import nhi karega jo sirf use karna hai usko sirf load karega and ArrayList se sirf ArrayList hi use hoga * aur ArrayList likhne se time  main kuch fark nhi padta 
+
+var_name.set(index,value); se hum ek particular index par koi bhi value set kar skte hai jaise agar 2 index par 10 hai to var_name.set(2,5); se 2 index par ab 5 ho jayega
+ print ya to loop se karlo ya iterator se 
+
+ for(int num: var_name){
+    System.out.print(num+" ");  isme int iterator ka datatype hai num iterator ka naam 
+ }
+
+#HASH MAP:-
+kya karta hai? to ye ek data structure hai jo data ko key,value pair main store karta hai
+ Syntax:- HashMap<Integer,Integer> map=new HashMap<Integer,Integer>();
+ map.put(key,value) se key value pair ko insert karva sakta ho
+map.get(key) se main value print karwa skta hoon hash map ke andar jaake check karega ki kya wo key hai to agar hai to value return krega else ek definite NULL value dega koi garbage_value nhi
+
+map.getdefault(key,defaultvalue) isse ye hota hai ki agar key hai hash map main to us key se related value return karo else wo key nhi hai to default_value print ho jaati hai 
+
+map main agar multiple value hai to then accessing ke liye loop lagao aur java ke hash map main ascendi ng order nhi hota par unique keys cpp ki tarah hi hoti hai aur haan agar ek se zyada same keey hai aur value diff hai to purani value ko update kar dega 
+
+Collections.sort(list) se array list ko sort kar sakte hai
+ye jo method hai wo similar type ke data type 
+
+public int compareto(Student s1)
+{
+   return this.Rollno-s1.Rollno;
+}
+ye jis bhi class main banaoge us class main Comparable<Student> class implement karna padega kyunki Comparable class ek built in interface hai usko call karte hai main function main Collections.sort(list); se and list here is the array of User defined datatype and also compare to main jo Student hai wo bhi ek user defined datatype hi hai
+
+isse ek hi basis pe object array sorting hogi in this case roll no
+agar custom logic ke according sort karna hai object to Comparator class use karo bhai
+
+
+iterator sirf forward hi travel karta hai
+it.hasNext() agar loop main aage element hai to chalega else nhi
+it.next se element print honge if put into System.out.print(it.next()); 
+list iterator forward backward dono jagah jaata hai
